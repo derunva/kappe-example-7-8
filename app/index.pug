@@ -1,0 +1,21 @@
+doctype html
+html(lang="uk")
+  include partials/head
+  body
+    .main-page
+      .sidebar
+        .logo
+        .menu
+        .filter
+        .share
+        .copyrights
+      .content
+        .portfolio-list
+          each i in '1234567890'
+            .portfolio-item__wrap
+              .portfolio-item
+                .portfolio-item__inner
+                  picture
+                    img(src="img/content/1.jpeg" alt="")
+            
+

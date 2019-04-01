@@ -1,0 +1,52 @@
+@import "vars";
+@import "mixins";
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+html
+  height: 100%
+
+img
+  max-width: 100%
+
+body
+  min-height: 100%
+
+  // height: 100vh
+
+  line-height: 1.5
+  font-family: Helvetica Neue, Arial, Helvetica, sans-serif
+.portfolio-list
+  display: flex
+  flex-wrap: wrap
+.portfolio-item
+  
+  width: 100%
+  padding-top: 75%
+  position: relative
+  &__wrap
+    flex: 0 1 100%
+    +breakpoint(phablet)
+      flex: 0 1 50%
+    +breakpoint(tablet)
+      flex: 0 1 33.33%
+    +breakpoint(laptop)
+      flex: 0 1 25%
+  &__inner
+
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    picture
+      display: block
+      height: 100%
+      width: 100%
+    img
+      object-fit: cover
+      height: 100%
+      width: 100%
+@import "grid";
+@import "typo";

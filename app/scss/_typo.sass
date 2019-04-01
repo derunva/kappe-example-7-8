@@ -1,0 +1,24 @@
+.main-heading
+  font-weight: normal
+  +propToRem(font-size, 20)
+  margin-bottom: $v-step
+  line-height: 1.3
+  +breakpoint(tablet)
+    +propToRem(font-size, 45)
+    // font-weight: 500
+    margin: 110px 0 150px
+.sub-heading
+  font-weight: 500
+  +propToRem(font-size, 16)
+  margin-bottom: $v-step-half
+  +breakpoint(tablet)
+    +propToRem(font-size, 20)
+.content-text
+  color: #b1b1b1
+  line-height: 1.7
+  +propToRem(font-size, 14)
+  ul
+    list-style: none
+    margin-bottom: 10px
+  p
+    margin-bottom: 10px
