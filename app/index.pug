@@ -12,10 +12,6 @@ html(lang="uk")
       .content
         .portfolio-list
           each i in '1234567890'
-            .portfolio-item__wrap
-              .portfolio-item
-                .portfolio-item__inner
-                  picture
-                    img(src="img/content/1.jpeg" alt="")
+            include partials/portfolio-item
             
 
