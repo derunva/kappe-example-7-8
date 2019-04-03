@@ -1,10 +1,19 @@
-.portfolio-item__wrap
+-
+  var items = [
+    'webdesign',
+    'illustration',
+    'photography',
+    'wallpapers',
+    'brochures'
+  ];
+  randIndex = Math.floor(Math.random() * items.length);
+.portfolio-item__wrap(data-anchor=items[randIndex])
   a(href="#").portfolio-item
     .portfolio-item__content
       .portfolio-item__title
         |Cool App Design
       .portfolio-item__tags
-        |development, mobile
+        |development, mobile, #{items[randIndex]}
       .portfolio-item__showmore
         <i class="fas fa-arrow-right"></i>
     .portfolio-item__inner

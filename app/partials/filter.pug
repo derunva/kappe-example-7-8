@@ -1,0 +1,17 @@
+-
+  var items = [
+    'All Works',
+    'web design',
+    'illustration',
+    'photography',
+    'wallpapers',
+    'brochures'
+  ];
+.filter
+  .filter__title
+    |Filter
+    <i class="fas fa-th-large"></i>
+  ul
+    each item in items
+      li
+        a(href="#"+item.replace(' ', '').toLowerCase())=item

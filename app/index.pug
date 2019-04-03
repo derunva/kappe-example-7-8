@@ -6,12 +6,13 @@ html(lang="uk")
       .sidebar
         .logo
         .menu
-        .filter
+        include partials/filter
         .share
         .copyrights
       .content
         .portfolio-list
           each i in '1234567890'
             include partials/portfolio-item
+    include partials/footer
             
 
