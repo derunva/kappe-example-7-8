@@ -4,12 +4,13 @@ html(lang="uk")
   body
     .main-page
       .sidebar
-        .logo
-        .menu
-        include partials/filter
-        .share
-        .copyrights
-      .content
+        .my-scrollbar
+          .logo
+          .menu
+          include partials/filter
+          .share
+          .copyrights
+      .content.my-scrollbar
         .portfolio-list
           each i in '1234567890'
             include partials/portfolio-item
